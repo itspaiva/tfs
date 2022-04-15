@@ -158,6 +158,7 @@ bool ConfigManager::load()
 	m_confBool[ACCOUNT_MANAGER] = getGlobalBool("accountManager", true);
 	m_confBool[NAMELOCK_MANAGER] = getGlobalBool("namelockManager", false);
 	m_confNumber[START_LEVEL] = getGlobalNumber("newPlayerLevel", 1);
+	m_confNumber[LOOT_CHANNEL] = getGlobalNumber("lootChannelId", 11);
 	m_confNumber[START_MAGICLEVEL] = getGlobalNumber("newPlayerMagicLevel", 0);
 	m_confBool[START_CHOOSEVOC] = getGlobalBool("newPlayerChooseVoc", false);
 	m_confNumber[HOUSE_PRICE] = getGlobalNumber("housePriceEachSquare", 1000);
