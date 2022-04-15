@@ -680,6 +680,8 @@ class Game
 		int32_t getLightHour() const {return lightHour;}
 		void startDecay(Item* item);
 
+		uint32_t spawnDivider(MonsterType* mType = nullptr);
+		
 #ifdef __GROUND_CACHE__
 		std::map<Item*, int32_t> grounds;
 #endif

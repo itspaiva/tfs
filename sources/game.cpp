@@ -7337,3 +7337,19 @@ void Game::parsePlayerExtendedOpcode(const uint32_t& playerId, const uint8_t& op
 	for(CreatureEventList::iterator it = extendedOpcodeEvents.begin(); it != extendedOpcodeEvents.end(); ++it)
 		(*it)->executeExtendedOpcode(player, opcode, buffer);
 }
+
+uint32_t Game::spawnDivider(MonsterType* mType)
+{
+    uint32_t multiplier = 1;
+    if (mType && !mType->ignoreSpawnBoost) {
+        uint32_t size = getPlayersOnline();
+        if (size >= 100 && size < 199) {
+            multiplier = 2;
+        } else if (size >= 200 && size < 299) {
+            multiplier = 3;
+        } else if (size >= 300) {
+            multiplier = 4;
+        }
+    }
+    return multiplier;
+}
