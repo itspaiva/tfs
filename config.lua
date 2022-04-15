@@ -3,6 +3,7 @@
 		AutoLoot_BlockIDs = "" -- adicione ids separado por ; ex: "1111;2222;3333"
 		AutoLoot_MoneyIDs = "2148;2152;2160" -- adicione os ids dos itens moeda, caso seja os 3 normais pode retirar essa linha
 		AutoLoot_MaxItem = 100 --  quantidade de itens maximo na lista
+		PushCruzado = true
 
 		-- Owner Data
 		ownerName = ""
