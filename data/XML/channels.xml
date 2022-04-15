@@ -20,6 +20,7 @@
 	<channel id="7" name="RL-Chat"/>
 	<channel id="8" name="Party"/>
 	<channel id="9" name="Help" logged="yes"/>
+	<channel id="11" name="Loot" logged="yes"/>
 	<!-- <channel id="10" name="My Custom Channel"/> -->
 	<channel id="65535" name="Private Chat Channel"/>
 </channels>

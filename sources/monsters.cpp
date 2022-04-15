@@ -31,8 +31,10 @@
 
 #include "configmanager.h"
 #include "game.h"
+#include "chat.h"
 
 extern Game g_game;
+extern Chat g_chat;
 extern Spells* g_spells;
 extern Monsters g_monsters;
 extern ConfigManager g_config;
@@ -251,9 +253,12 @@ void MonsterType::dropLoot(Container* corpse)
 		ss << "\nAuto Coleta: :" << str.str();
 	}
 	if(owner->getParty() && message > LOOTMSG_PLAYER)
-		owner->getParty()->broadcastMessage((MessageClasses)g_config.getNumber(ConfigManager::LOOT_MESSAGE_TYPE), ss.str());
-	else if(message == LOOTMSG_PLAYER || message == LOOTMSG_BOTH)
-		owner->sendTextMessage((MessageClasses)g_config.getNumber(ConfigManager::LOOT_MESSAGE_TYPE), ss.str());
+		owner->getParty()->broadcastPartyLoot((MessageClasses)MSG_CHANNEL, ss.str());
+		else if(message == LOOTMSG_PLAYER || message == LOOTMSG_BOTH)
+			if(!g_chat.getChannel(owner, g_config.getNumber(ConfigManager::LOOT_CHANNEL))->hasUser(owner))
+			owner->sendTextMessage((MessageClasses)g_config.getNumber(ConfigManager::LOOT_MESSAGE_TYPE), ss.str());
+		else
+		owner->sendChannelMessage(owner->getName(), ss.str(), (MessageClasses)MSG_CHANNEL, g_config.getNumber(ConfigManager::LOOT_CHANNEL));
 }
 
 bool Monsters::loadFromXml(bool reloading /*= false*/)

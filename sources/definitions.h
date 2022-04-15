@@ -25,7 +25,7 @@
 
 #define TRACK_MESSAGE(x)
 
-#define SOFTWARE_NAME "TibiaKing OTX 2"
+#define SOFTWARE_NAME "TK OTX 1.x"
 #define SOFTWARE_VERSION ""
 #define MINOR_VERSION ""
 #define SOFTWARE_CODENAME "TibiaKing"

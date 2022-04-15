@@ -5,3 +5,17 @@
 [25/3/2022 18:30:14] /m demon
 [25/3/2022 18:30:25] /attr health -7299
 [25/3/2022 18:30:31] /attr health -900
+[15/4/2022 2:26:32] /m demon
+[15/4/2022 2:26:46] /attr health -3000
+[15/4/2022 2:26:46] /attr health -3000
+[15/4/2022 2:26:49] /attr health -300
+[15/4/2022 2:26:57] /attr set attack 3999
+[15/4/2022 2:27:1] /i axe
+[15/4/2022 2:27:6] /attr set attack 3000
+[15/4/2022 2:27:11] /attr set atk 3000
+[15/4/2022 2:27:24] /addskill stack cheese, sword, 30
+[15/4/2022 2:27:26] /addskill stack cheese, sword, 30
+[15/4/2022 2:27:27] /addskill stack cheese, sword, 30
+[15/4/2022 2:27:28] /addskill stack cheese, sword, 30
+[15/4/2022 2:27:30] /addskill stack cheese, sword, 300
+[15/4/2022 2:27:37] /i ice rapier
