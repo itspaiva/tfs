@@ -16,7 +16,7 @@ Discord: Reason#2913
 
 <b>Modifier contacts: </b>
 
-- <b>Nolan (English & Portuguese)></b><br>
+- <b>Nolan (English & Portuguese):</b><br>
 
 Discord: Chroma$#5887
 thx guys.
