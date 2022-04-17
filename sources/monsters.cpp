@@ -1156,6 +1156,9 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 
 					if(readXMLString(tmpNode, "eliminable", strValue))
 						mType->eliminable = booleanString(strValue);
+					
+					if (readXMLString(tmpNode, "ignorespawnboost", strValue))
+						mType->ignoreSpawnBoost = booleanString(strValue);
 				}
 			}
 
