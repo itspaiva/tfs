@@ -92,7 +92,7 @@ class MonsterType
 		bool createChildLoot(Container* parent, const LootBlock& lootBlock, uint32_t& money, std::stringstream& str, Player* player);
 
 		bool isSummonable, isIllusionable, isConvinceable, isAttackable, isHostile, isPassive, isLureable,
-			isWalkable, canPushItems, canPushCreatures, pushable, hideName, hideHealth, eliminable;
+			isWalkable, canPushItems, canPushCreatures, pushable, hideName, hideHealth, eliminable, ignoreSpawnBoost;
 
 		Outfit_t outfit;
 		RaceType_t race;
